@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Blog App</h1>
+    <div class="mainpage">
+        <div class="newpost">
+            <h2>Новый пост</h2>
+    
+            <textarea 
+                type="text" 
+                class="js-newpost__add-title newpost__add-title"
+                required placeholder="Заголовок"
+                maxlength="100"
+                ></textarea>
+            <textarea 
+                type="text"
+                class="js-newpost__add-text newpost__add-text"
+                required placeholder="Напиши пост"
+                wrap="soft"
+                maxlength="200"
+                ></textarea>
+            <button 
+                class="js-newpost__add-post-btn newpost__add-post-btn"
+                disabled>Опубликовать</button>
+
+            <div class="js-error-decorator error-decorator"></div>
+        </div>
+    
+        <div class="posts-section">
+            <h2 class="posts-section__header">Лента</h2>
+
+            <div class="js-posts posts">
+                Empty...
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
